@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#2e7d32" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <link rel="apple-touch-icon" href="/logo-1024.png">
+  <title>Evergreen Home Healthcare Services</title>
+  <link rel="manifest" href="/manifest.json" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="Evergreen Logo" width="100" />
+    <h1>Evergreen Home Healthcare Services</h1>
+    <p>Compassionate Assisted Living in a Homelike Setting</p>
+  </header>
+
+  <section class="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:evergreenhomehcs@gmail.com">evergreenhomehcs@gmail.com</a></p>
+    <p>Email: <a href="mailto:marie@evergreenhomehcs.com">marie@evergreenhomehcs.com</a></p>
+    <p>Phone: <a href="tel:+17632200803">(763) 220-0803</a></p>
+    <p>Website: <a href="https://www.evergreenhomehcs.com">www.evergreenhomehcs.com</a></p>
+  </section>
+
+  <section class="buttons">
+    <h2>Access Secure Forms</h2>
+    <a href="https://docs.google.com/forms/d/1w_Zp0tyfi0gMqO1FtL-mDrnkaogLclUJKNnNelyFr6Y/edit" target="_blank" class="button" role="button">Submit Referral Form</a>
+    <a href="https://docs.google.com/forms/d/1Hhr-KWrmIpymvmWc1ayP_G5BMxJZJ0MChBfEjhYtUGY/edit" target="_blank" class="button" role="button">Submit Intake Form</a>
+    <a href="https://docs.google.com/forms/d/14mnP60GJbATMNTkZ7sBkEpd0SkQOOsQzIqLpQm7Urkc/edit" target="_blank" class="button" role="button">Job Application Form</a>
+  </section>
+
+  <section class="levels">
+    <h2>Levels of Care</h2>
+    <ul>
+      <li><strong>Level 1:</strong> Independent with ADLs & meds. Light help with med mgmt, food prep, housekeeping, laundry, IADLs.</li>
+      <li><strong>Level 2:</strong> Everything in Level 1 + assistance with most ADLs.</li>
+      <li><strong>Level 3:</strong> Full assistance with all ADLs, including transfers and toileting.</li>
+    </ul>
+  </section>
+
+  <section class="services">
+    <h2>Services</h2>
+    <ul>
+      <li>Medication Management / Administration</li>
+      <li>Bathing, Grooming, Dressing, Toileting, Transfers</li>
+      <li>Help with Appointments</li>
+      <li>Comprehensive RN Assessments</li>
+      <li>Recreation: Outdoor Events, Movies, Music, Group Exercise, Gardening</li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>&copy; Evergreen Home Healthcare Services</p>
+  </footer>
+
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/service-worker.js').catch(function(error) {
+        console.warn('Service Worker registration failed:', error);
+      });
+    }
+  </script>
+</body>
+</html>
